@@ -56,18 +56,6 @@
 	</bean>
 
 
-	<bean id="wiTECH2FEEDBACK" class="org.springframework.jdbc.core.JdbcTemplate">
-		<property name="dataSource" ref="wiTECH2FEEDBACKDataSource"></property>
-	</bean>
-
-	<bean id="wiTECH2FEEDBACKDataSource" class="org.apache.commons.dbcp.BasicDataSource">
-		<property name="driverClassName" value="com.mysql.jdbc.Driver"></property>
-		<property name="url"
-			value="jdbc:mysql://infra-wt2feedback-01.chrysler.fcawitech-internal.com:3306/"></property>
-		<property name="username" value="sessionreader"></property>
-		<property name="password" value="pudXhJ422W2O"></property>
-	</bean>
-
 	<bean id="localDataSource" class="org.apache.commons.dbcp.BasicDataSource">
 		<property name="driverClassName" value="com.mysql.jdbc.Driver"></property>
 		<property name="url"
