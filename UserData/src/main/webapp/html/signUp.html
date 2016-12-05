@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>SignUp Form</title>
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+</head>
+<body>
+
+	<div class='navbar navbar-default navbar-static-top'>
+		<!-- NavBar static top start -->
+		<div class='container'>
+			<!-- container start -->
+			<div class='navbar-header'>
+				<!-- nav header start -->
+				<a href='login.html' class='navbar-brand'>PILOT_SESSIONDATA</a>
+				<button type='button' class='navbar-toggle' data-toggle='collapse'
+					data-target='.navbar-collapse'>
+					<span class='sr-only'>Toggle Navigation</span> <span
+						class='icon-bar'></span> <span class='icon-bar'></span> <span
+						class='icon-bar'></span>
+				</button>
+
+
+			</div>
+			<!-- nav header stop -->
+			<ul class='nav navbar-nav navbar-right collapse navbar-collapse'>
+				<li><a href="login.html">Login</a></li>
+				<li><a href="#" data-toggle='dropdown'>About Us<span
+						class='caret'></span></a>
+					<ul class='dropdown-menu'>
+						<li><a href='contactUs.html'>Contact Us</a></li>
+						<li><a href='about.html'>About</a></li>
+						<li class='divider'></li>
+						<li><a href='Blog.html'>Blog</a></li>
+						<li class='divider'></li>
+						<li><a href='http://www.facebook.com'>FaceBook</a></li>
+						<li><a href='http://www.twitter.com'>Twitter</a></li>
+					</ul></li>
+			</ul>
+		</div>
+		<!-- container stop -->
+
+	</div>
+	<!-- navbar static top  stop -->
+
+	<div class='container well'>
+		<form action="" method="post">
+			<div class='form-group'>
+				<div data-ng-app="userApp" data-ng-controller="addUserController">
+					firstName = <input type="text" class='form-control' id='fName'
+						data-ng-model='user.userFirstName' /> lastName = <input
+						type="text" class='form-control' id='lName'
+						data-ng-model='user.userLastName' /> Email = <input type="text"
+						class='form-control' id='email' data-ng-model='user.userEmail' />
+					UserName = <input type="text" class='form-control' id='username'
+						data-ng-model='user.userName' /> passWord = <input
+						type="password" class='form-control' id='password'
+						data-ng-model='user.userPassword' /> <input
+						data-ng-click="submit()" type="button" value="Submit the form">
+					<input type="reset" value="Reset the form">
+
+				</div>
+
+			</div>
+		</form>
+	</div>
+	<div class="footer navbar-static-bottom well">
+		<p style="text-align: center;">Copyright PRIMASOLV.LLC(c) 2016</p>
+	</div>
+	<script
+		src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+	<script
+		src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+	<script
+		src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script src='../js/bootstrap.js'></script>
+	<script src='../js/SessionDataApplication.js'></script>
+</body>
+</html>

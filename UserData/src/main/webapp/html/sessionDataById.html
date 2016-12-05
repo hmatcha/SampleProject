@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>SessionData Between Specific Timestamp's</title>
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+<link rel="stylesheet" href="../css/design.css">
+
+</head>
+
+</head>
+<body>
+	<div class='navbar navbar-default navbar-static-top'>
+		<!-- NavBar static top start -->
+		<div class='container'>
+			<!-- container start -->
+			<div class='navbar-header'>
+				<!-- nav header start -->
+				<a href='login.html' class='navbar-brand'>PILOT_SESSIONDATA</a>
+				<button type='button' class='navbar-toggle' data-toggle='collapse'
+					data-target='.navbar-collapse'>
+					<span class='sr-only'>Toggle Navigation</span> <span
+						class='icon-bar'></span> <span class='icon-bar'></span> <span
+						class='icon-bar'></span>
+				</button>
+
+
+			</div>
+			<!-- nav header stop -->
+			<ul class='nav navbar-nav navbar-right collapse navbar-collapse'>
+				<li><a href="#" data-toggle='dropdown'>About Us<span
+						class='caret'></span></a>
+					<ul class='dropdown-menu'>
+						<li><a href='contactUs.html'>Contact Us</a></li>
+						<li><a href='about.html'>About</a></li>
+						<li class='divider'></li>
+						<li><a href='Blog.html'>Blog</a></li>
+						<li class='divider'></li>
+						<li><a href='http://www.facebook.com'>FaceBook</a></li>
+						<li><a href='http://www.twitter.com'>Twitter</a></li>
+					</ul></li>
+			</ul>
+		</div>
+		<!-- container stop -->
+
+	</div>
+	<!-- navbar static top  stop -->
+
+
+
+	<div class='container well' id='content'>
+		<form name="sessionDataForm" action="" method="post">
+			<div class='form-group'>
+				<div>
+					Region = <input type="text" class='form-control' id='region'
+						name='region' /> Environment = <input type="text"
+						class='form-control' id='environment' name='environment' />
+					Session Id = <input type="text" class='form-control' id='id'
+						name='id' /> <input type="button" value="submit" id="submit" />
+					<input type="reset" value="ResetForm" />
+				</div>
+			</div>
+		</form>
+	</div>
+	<div id='lTable' class='container' data-ng-app="sessionDataApp"
+		data-ng-controller="getSessionDataBetweenTimeStamp">
+		<div class='row'>
+			<div class='col-md-6'>
+				<table style="border: 10px solid;">
+					<tr class='tHead'>
+						<th style="color: red; text-align: center;">Session ID</th>
+						<th style="color: red; text-align: center;">VIN</th>
+						<th style="color: red; text-align: center;">Timestamp</th>
+						<th style="color: red; text-align: center;">Model</th>
+						<th style="color: red; text-align: center;">Year</th>
+						<th style="color: red; text-align: center;">Exit_Code>
+						<th style="color: red; text-align: center;">Last_Session_Id</th>
+						<th style="color: red; text-align: center;">Yb_Id</th>
+						<th style="color: red; text-align: center;">body</th>
+						<th style="color: red; text-align: center;">arch</th>
+						<th style="color: red; text-align: center;">Category>
+						<th style="color: red; text-align: center;">Engine_Name</th>
+						<th style="color: red; text-align: center;">Odometer</th>
+						<th style="color: red; text-align: center;">Svr_Time</th>
+						<th style="color: red; text-align: center;">Tool_Sn</th>
+						<th style="color: red; text-align: center;">Tool_Ip>
+						<th style="color: red; text-align: center;">Dealer_Code</th>
+						<th style="color: red; text-align: center;">Users</th>
+						<th style="color: red; text-align: center;">Pod_Boot_Time</th>
+						<th style="color: red; text-align: center;">Pod_Resolve_Time</th>
+						<th style="color: red; text-align: center;">Pod_Dm_Time>
+						<th style="color: red; text-align: center;">Pod_Session_Time</th>
+						<th style="color: red; text-align: center;">Pod_Link</th>
+						<th style="color: red; text-align: center;">Pod_Platform</th>
+						<th style="color: red; text-align: center;">Pod_OS_Vsn</th>
+						<th style="color: red; text-align: center;">Pod_App_Vsn>
+						<th style="color: red; text-align: center;">Svr_Vsn</th>
+						<th style="color: red; text-align: center;">Db_Date</th>
+						<th style="color: red; text-align: center;">Tool_Svr_Inst</th>
+						<th style="color: red; text-align: center;">Tool_Svr_Log</th>
+						<th style="color: red; text-align: center;">Last_Update</th>
+
+					</tr>
+					<tbody id='Table'>
+
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+
+	<div class="footer navbar-static-bottom well">
+		<p style="text-align: center;">Copyright PRIMASOLV.LLC(c) 2016</p>
+	</div>
+	<script
+		src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+	<script
+		src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script src='../js/bootstrap.js'></script>
+	<script src='../js/SessionDataApplication.js'></script>
+</body>
+</html>
